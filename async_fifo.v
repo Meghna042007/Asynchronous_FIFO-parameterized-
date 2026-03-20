@@ -26,7 +26,6 @@ always @(posedge clk_rd or posedge rst)
 begin
 if(rst)
    begin
-   data_out<=0;
    rd_ptr<=0;
    end
 else if(rd_en && ~empty)
